@@ -31,7 +31,7 @@ highlight = ['pygments']
 
 setuptools.setup(
     name='pix2tex',
-    version='0.1.3',
+    version='0.1.5',
     description='pix2tex: Using a ViT to convert images of equations into LaTeX code.',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -69,6 +69,7 @@ setuptools.setup(
         'timm==0.5.4',
         'albumentations>=0.5.2',
         'pyreadline3>=3.4.1; platform_system=="Windows"',
+        'wheel',
     ],
     extras_require={
         'all': gui+api+train+highlight,
