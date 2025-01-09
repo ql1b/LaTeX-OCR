@@ -156,12 +156,7 @@ To locally package the repository version of pix2tex and run it, follow these st
 
 3. Package the project:
     ```
-    python setup.py sdist bdist_wheel
-    ```
-
-4. Install the package:
-    ```
-    pip install dist/pix2tex-<version>-py3-none-any.whl
+    pip install -e .
     ```
 
 5. Run the package:
