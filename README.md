@@ -138,3 +138,33 @@ Code taken and modified from [lucidrains](https://github.com/lucidrains), [rwigh
 [2] [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 
 [3] [Image-to-Markup Generation with Coarse-to-Fine Attention](https://arxiv.org/abs/1609.04938v2)
+
+## Local Packaging and Running
+
+To locally package the repository version of pix2tex and run it, follow these steps:
+
+1. Clone the repository:
+    ```
+    git clone https://github.com/ql1b/LaTeX-OCR.git
+    cd LaTeX-OCR
+    ```
+
+2. Install the required dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+3. Package the project:
+    ```
+    python setup.py sdist bdist_wheel
+    ```
+
+4. Install the package:
+    ```
+    pip install dist/pix2tex-<version>-py3-none-any.whl
+    ```
+
+5. Run the package:
+    ```
+    pix2tex
+    ```
