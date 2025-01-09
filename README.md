@@ -168,3 +168,17 @@ To locally package the repository version of pix2tex and run it, follow these st
     ```
     pix2tex
     ```
+
+### Troubleshooting
+
+If you encounter the error `invalid command 'bdist_wheel'` while running `python setup.py sdist bdist_wheel`, it means that the `wheel` package is not installed. You can install it by running:
+
+```
+pip install wheel
+```
+
+After installing the `wheel` package, you should be able to successfully run the packaging command:
+
+```
+python setup.py sdist bdist_wheel
+```
